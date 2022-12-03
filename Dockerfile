@@ -1,13 +1,13 @@
 FROM alpine:3.15
 LABEL maintainer="dev@monkeysas.com"
-LABEL version="1.0.0"
+LABEL version="1.1.0"
 
 RUN set -ex; \
   \
   apk add -u bash \
   openssl \
   curl \
-  grep \ 
+  grep \
   git \
   go \
   libc-dev \

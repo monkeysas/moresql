@@ -33,6 +33,11 @@ func LoadConfigString(s string) (Config, error) {
 			}
 			coll.Fields = fields
 			db.Collections[k] = coll
+			if v.Alias != "" {
+				aliasColl := Collection{Name: v.Alias, PgTable: v.PgTable}
+				aliasColl.Fields = fields
+				db.Collections[v.Alias] = aliasColl
+			}
 		}
 		config[k] = db
 	}

@@ -6,7 +6,7 @@ require (
 	github.com/Sirupsen/logrus v0.10.1-0.20160601113210-f3cfb454f4c2
 	github.com/heroku/rollrus v0.0.0-20160824233412-d20e35b8f913
 	github.com/jmoiron/sqlx v0.0.0-20161209024531-cac998c4f095
-	github.com/lib/pq v0.0.0-20160511035104-ee1442bda7bd
+	github.com/lib/pq v1.10.7
 	github.com/orcaman/concurrent-map v0.0.0-20161205115927-cafb9879460a
 	github.com/paulbellamy/ratecounter v0.1.1-0.20170206102657-348ad3bf08f0
 	github.com/pkg/errors v0.8.1-0.20170227220037-bfd5150e4e41

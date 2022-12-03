@@ -315,6 +315,7 @@ type Collection struct {
 
 type CollectionDelayed struct {
 	Name    string          `json:"name"`
+	Alias   string          `json:"alias"`
 	PgTable string          `json:"pg_table"`
 	Fields  json.RawMessage `json:"fields"`
 }
