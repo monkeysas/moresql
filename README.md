@@ -15,7 +15,7 @@ on their business critical workloads for core systems. It is a stable project
 with low maintenance and high performance.
 
 ## QuickStart
-### Introduction
+### Introduction 
 
 * Create metadata table
 * Setup moresql.json (see Configuration)
@@ -28,6 +28,11 @@ with low maintenance and high performance.
 * Write more sql ;D
 
 # Usage
+
+## Docker Use
+
+MONGO_URL_FILE and POSTGRES_URL_FILE must be set
+tail mode is the default
 
 ## Basic Use
 ### Configuration

@@ -21,3 +21,6 @@ require (
 	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
 	gopkg.in/yaml.v2 v2.0.0-20160928153709-a5b47d31c556
 )
+
+replace github.com/rwynn/gtm v0.0.0-20170315180800-22eec6961032 => github.com/monkeysas/gtm v0.0.0-20200916182116-ede180a06b88
+

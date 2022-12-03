@@ -138,7 +138,7 @@ WITH tables_and_indexes AS (
       END                                             AS uniquekey,
       CASE
       WHEN f.atthasdef = 't'
-        THEN d.adsrc
+        THEN pg_get_expr(d.adbin, d.adrelid)
       END                                             AS default
     FROM pg_attribute f
       JOIN pg_class c ON c.oid = f.attrelid

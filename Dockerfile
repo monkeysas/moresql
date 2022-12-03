@@ -16,6 +16,7 @@ RUN set -ex; \
 RUN mkdir -p /app
 RUN echo "export MONGO_URL=\`cat \${MONGO_URL_FILE}\`" > /entrypoint.sh
 RUN echo "export POSTGRES_URL=\`cat \${POSTGRES_URL_FILE}\`" >> /entrypoint.sh
+RUN echo "sleep 20" >> /entrypoint.sh
 RUN echo "/app/bin/moresql -\${MODE:-tail} -config-file=\${CONFIG_FILE:-/etc/moresql.json}" >> /entrypoint.sh
 
 WORKDIR /app
